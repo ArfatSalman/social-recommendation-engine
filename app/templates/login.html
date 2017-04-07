@@ -1,0 +1,31 @@
+{% from "_macros.html" import render_field %}
+{% extends "_base.html" %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <form method="POST">
+                        {{form.csrf_token}}
+                        
+                        {{render_field(form.email, class='form-control')}}
+
+                        {{render_field(form.password, class='form-control')}}
+
+                        {{form.submit(class='btn btn-info btn-block')}}
+
+                    </form>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+    
+
+{% endblock %}

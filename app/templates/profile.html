@@ -1,0 +1,93 @@
+{% from "_macros.html" import render_field, render_tags, user_box %}
+{% extends "_base.html" %}
+
+{% block content %}
+	<div class="col-md-6 col-md-offset-1">
+		<h3>My posts</h3>
+		<div class="panel panel-default">
+			<div class="panel-body">
+				
+				{% for row in current_user.get_recent_post() %}
+				<div class="panel panel-default">
+					
+					<div class="panel-body">
+						<h4>Tags</h4>
+						{{render_tags(row.tags)}}
+
+						<h3>{{row.post.title}}</h3>
+						<p>{{row.post.text}}</p>
+					</div>
+
+				</div>
+				{% else %}
+					<h2>No post</h2>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+
+	{% if current_user.email == user_node.email %}
+		<div class="col-md-5">
+			<h3>Recommended Users</h3>
+			{% for row in current_user.similarity_scores() %}
+				<div class="recommended-user">
+					<h4><a href="{{url_for('.profile', email=row.they.email)}}">{{row.they.username}}</a></h4>
+					
+					Tags you share:
+
+					{{render_tags(row.tags)}}
+					<br>
+					<form method="POST" action="/follow">
+						{{form.csrf_token}}
+						{{form.email(value=row.they.email)}}
+						{{form.make_friends(class="btn btn-default")}}
+					</form>
+				</div>
+			{% else %}
+				<h3>No user</h3>
+			{% endfor %}
+		</div>
+	{% else %}
+		{% for common in current_user.get_commonality_of_user(user_node.email) %}
+
+			{% if common['likes'] %}
+				<p>{{user_node.name}} likes {{common['likes']}} of your posts.</p>
+			{% endif %}
+		
+			<h4>Tags common between you and {{user_node.username}}</h4>
+			{{render_tags(common['tags'])}}
+		{% endfor %}
+
+	{% endif %}
+
+	<div class="col-md-5">
+		<h3>People who {% if current_user.email == user_node.email %} you {% else %} {{user_node.username}} {% endif %}are following</h3>
+
+		{% for row in current_user.follows_users() %}
+			<div class="recommended-user">
+				<h4><a href="{{url_for('.profile', email=row.user.email)}}">{{row.user.username}}</a></h4>
+				
+				<form method="POST" action="/unfollow">
+					{{unfollow.csrf_token}}
+					{{unfollow.email(value=row.user.email)}}
+					{{unfollow.unfollow(class="btn btn-warning")}}
+				</form>
+			</div>
+		{% else %}
+			No users
+		{% endfor %}
+	</div>
+
+	<div class="col-md-5">
+		<h3>People who follow {% if current_user.email == user_node.email %}you{% else %} {{user_node.username}} {% endif %}</h3>
+
+		{% for row in current_user.following_users() %}
+			<div class="recommended-user">
+				<h4><a href="{{url_for('.profile', email=row.user.email)}}">{{row.user.username}}</a></h4>
+			</div>
+		{% else %}
+			No users
+		{% endfor %}
+	</div>
+
+{% endblock %}

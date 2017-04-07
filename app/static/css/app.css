@@ -1,0 +1,17 @@
+
+.userbox {
+    padding: 8px;
+    box-shadow: 0 0 2px #005ede;
+    border-radius: 5px;
+}
+
+.userbox a {
+    padding: 6px;
+}
+
+.recommended-user {
+    padding: 5px;
+    border: 1px solid black;
+    margin: 5px;
+    border-radius: 5px;
+}

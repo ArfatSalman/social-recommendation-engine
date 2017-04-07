@@ -1,0 +1,1080 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fo",
+				"follow"
+			],
+			[
+				"cho",
+				"choose_user"
+			],
+			[
+				"log",
+				"login"
+			],
+			[
+				"us",
+				"choose_user"
+			],
+			[
+				"te",
+				"test_client"
+			],
+			[
+				"get",
+				"get_tags"
+			],
+			[
+				"re",
+				"register"
+			],
+			[
+				"f",
+				"follow_redirects"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"h",
+				"h4	Tag"
+			],
+			[
+				"user",
+				"users"
+			],
+			[
+				"chec",
+				"check_category_name"
+			],
+			[
+				"view",
+				"view_cache"
+			],
+			[
+				"deal",
+				"deal_cache"
+			],
+			[
+				"__",
+				"__deal_chache"
+			],
+			[
+				"deals",
+				"deals_paginate"
+			],
+			[
+				"se",
+				"self"
+			],
+			[
+				"fro",
+				"froms"
+			],
+			[
+				"pa",
+				"page"
+			],
+			[
+				"fr",
+				"from_"
+			],
+			[
+				"req",
+				"required"
+			],
+			[
+				"api",
+				"api_0_1"
+			],
+			[
+				"des",
+				"designation"
+			],
+			[
+				"one",
+				"one_or_none"
+			],
+			[
+				"filter",
+				"filter_by"
+			],
+			[
+				"User",
+				"UserModel"
+			],
+			[
+				"de",
+				"decompress"
+			],
+			[
+				"deco",
+				"decode"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"count",
+				"count_property_exists"
+			],
+			[
+				"tag",
+				"tagname"
+			],
+			[
+				"ma",
+				"MakeFriendsForm"
+			],
+			[
+				"res",
+				"response"
+			],
+			[
+				"C",
+				"Column"
+			],
+			[
+				"add",
+				"add_argument"
+			],
+			[
+				"sugges",
+				"suggestions_to_me"
+			],
+			[
+				"su",
+				"suggestion"
+			],
+			[
+				"sugg",
+				"suggestion"
+			],
+			[
+				"suggest",
+				"suggestions_by_me"
+			],
+			[
+				"Sugges",
+				"SuggestedDeal"
+			],
+			[
+				"s",
+				"SuggestionForm"
+			],
+			[
+				"Fo",
+				"ForeignKey"
+			],
+			[
+				"other",
+				"other_email"
+			],
+			[
+				"succ",
+				"successful"
+			],
+			[
+				"post",
+				"post_id"
+			],
+			[
+				"P",
+				"PUBLISHED"
+			],
+			[
+				"pos",
+				"post_form"
+			],
+			[
+				"login",
+				"login_required"
+			],
+			[
+				"find_",
+				"find_user_node"
+			],
+			[
+				"test_Ca",
+				"test_category_post"
+			],
+			[
+				"make",
+				"make_categories"
+			],
+			[
+				"U",
+				"UserCategory"
+			],
+			[
+				"dea",
+				"deals_paginate"
+			],
+			[
+				"cat",
+				"cat_fields"
+			],
+			[
+				"ap",
+				"append"
+			],
+			[
+				"all",
+				"all_cats"
+			],
+			[
+				"Gra",
+				"GraphObject"
+			],
+			[
+				"play",
+				"player_word"
+			],
+			[
+				"pla",
+				"player_word"
+			],
+			[
+				"ex",
+				"except"
+			],
+			[
+				"file",
+				"filename"
+			],
+			[
+				"print",
+				"printLineofFile"
+			],
+			[
+				"max",
+				"max_line_number"
+			],
+			[
+				"try",
+				"try	Try/Except"
+			],
+			[
+				"w",
+				"word"
+			],
+			[
+				"word",
+				"words"
+			],
+			[
+				"line",
+				"line_number"
+			],
+			[
+				"getr",
+				"get_verified_deal"
+			],
+			[
+				"sec",
+				"sector"
+			],
+			[
+				"ap_",
+				"api_0_1"
+			],
+			[
+				"S",
+				"SubmitField"
+			],
+			[
+				"in",
+				"income"
+			],
+			[
+				"first",
+				"firstName"
+			],
+			[
+				"cus",
+				"customer_record"
+			],
+			[
+				"bi",
+				"bill_amount"
+			],
+			[
+				"ge",
+				"generateBillAmount"
+			],
+			[
+				"last",
+				"lastName"
+			],
+			[
+				"firs",
+				"firstName"
+			],
+			[
+				"Use",
+				"UserMixin"
+			],
+			[
+				"cate",
+				"category"
+			],
+			[
+				"check",
+				"check_same_user"
+			],
+			[
+				"ca",
+				"categories"
+			],
+			[
+				"Sec",
+				"SectorForm"
+			],
+			[
+				"sectors",
+				"sectors"
+			],
+			[
+				"sector",
+				"sector_id"
+			],
+			[
+				"categ",
+				"category"
+			],
+			[
+				"Cate",
+				"CategoryItems"
+			],
+			[
+				"slee",
+				"sleepFor"
+			],
+			[
+				"thre",
+				"threadName"
+			],
+			[
+				"is",
+				"is_subscribed"
+			],
+			[
+				"disc",
+				"discussions"
+			],
+			[
+				"image",
+				"image_url"
+			],
+			[
+				"dis",
+				"discussions"
+			],
+			[
+				"D",
+				"DiscussionsEP"
+			],
+			[
+				"com",
+				"commit_to_DB"
+			],
+			[
+				"get_",
+				"get_verified_deal"
+			],
+			[
+				"Us",
+				"UserDealDiscussion"
+			],
+			[
+				"my",
+				"my_map"
+			],
+			[
+				"ass",
+				"assertEqual"
+			],
+			[
+				"c",
+				"crossdomain"
+			],
+			[
+				"category",
+				"category_id"
+			],
+			[
+				"str",
+				"String"
+			],
+			[
+				"va",
+				"validate_on_submit"
+			],
+			[
+				"reg",
+				"register_form"
+			],
+			[
+				"ajaxSe",
+				"ajaxsetup	$.ajaxSetup()"
+			],
+			[
+				"File",
+				"FileField"
+			],
+			[
+				"test_cate",
+				"test_category_deals_post"
+			],
+			[
+				"to",
+				"to_json"
+			],
+			[
+				"co",
+				"Column"
+			],
+			[
+				"a",
+				"ajax	$.ajax()"
+			],
+			[
+				"js",
+				"jsonify"
+			],
+			[
+				"auth",
+				"auth_bp"
+			],
+			[
+				"A",
+				"ALLOWED_EXTENSIONS"
+			],
+			[
+				"curre",
+				"current_app"
+			],
+			[
+				"curen",
+				"current_app"
+			],
+			[
+				"app",
+				"application"
+			],
+			[
+				"Deal",
+				"DealsViewedByUsers"
+			],
+			[
+				"Dea",
+				"DealsViewedByUsers"
+			],
+			[
+				"_",
+				"_test_user_login"
+			],
+			[
+				"cl",
+				"client"
+			],
+			[
+				"test",
+				"test_user_login"
+			],
+			[
+				"parse",
+				"parser"
+			],
+			[
+				"url",
+				"url_for"
+			],
+			[
+				"_te",
+				"_test_deal_get_by_id"
+			],
+			[
+				"delete",
+				"delete_item"
+			],
+			[
+				"i",
+				"insert_item"
+			],
+			[
+				"d",
+				"d"
+			],
+			[
+				"class",
+				"classmethod"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "models.py",
+			"settings":
+			{
+				"buffer_size": 8778,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "views.py",
+			"settings":
+			{
+				"buffer_size": 3848,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "__init__.py",
+			"settings":
+			{
+				"buffer_size": 276,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Arfat Salman/Desktop/dealflow/config.py",
+			"settings":
+			{
+				"buffer_size": 1474,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Arfat Salman/Desktop/Rec/fill_random_data.py",
+			"settings":
+			{
+				"buffer_size": 4090,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"Package Control",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Lorem ipsum"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/api_0_1/resources/user.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/templates/_base.html",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/templates/index.html",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/admin_page.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/models.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/webview/views.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/__init__.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/api_0_1/__init__.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/templates/users.html",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/admin.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/webview/__init__.py",
+		"/C/Users/Arfat Salman/Desktop/Rec/app/templates/index.html",
+		"/C/Users/Arfat Salman/Desktop/Rec/app/forms.py",
+		"/C/Users/Arfat Salman/Desktop/Rec/app/views.py",
+		"/C/Users/Arfat Salman/Desktop/Rec/app/models.py",
+		"/C/Users/Arfat Salman/Desktop/Rec/app/static/css/app.css",
+		"/C/Users/Arfat Salman/Desktop/Rec/app/templates/_base.html",
+		"/C/Users/Arfat Salman/Desktop/Rec/app/templates/_macros.html",
+		"/C/Users/Arfat Salman/Desktop/Rec/app/templates/profile.html",
+		"/C/Users/Arfat Salman/Desktop/Rec/app/templates/followings.html",
+		"/C/Users/Arfat Salman/Desktop/Rec/app/templates/friends-feed.html",
+		"/C/Users/Arfat Salman/Desktop/Rec/utility.py",
+		"/C/Users/Arfat Salman/Desktop/Rec/app/templates/register.html",
+		"/C/Users/Arfat Salman/Desktop/Rec/app/templates/login.html",
+		"/C/Users/Arfat Salman/Desktop/Rec/app/templates/post.html",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/api_0_1/cache.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/tests/test_user.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/api_0_1/resources/deals.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/api_0_1/utils.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/config.py",
+		"/C/Users/Arfat Salman/Desktop/Rec/venv/Lib/site-packages/forgery_py/__init__.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/api_0_1/resources/filter.py",
+		"/D/Experiment/main.cpp",
+		"/C/Users/Arfat Salman/Desktop/Rec/abc.py",
+		"/D/Experiment/numberss.txt",
+		"/C/Users/Arfat Salman/Desktop/cos.py",
+		"/C/Users/Arfat Salman/Desktop/mark.hs",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/api_0_1/resources/forms.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/api_0_1/resources/suggestions.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/api_0_1/resources/__init__.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/utils.py",
+		"/C/Users/Arfat Salman/AppData/Local/Temp/result.json",
+		"/C/Users/Arfat Salman/Desktop/New folder/library_coin.js",
+		"/C/Users/Arfat Salman/Desktop/New folder/calculate.js",
+		"/C/Users/Arfat Salman/Desktop/code.cpp",
+		"/C/Users/Arfat Salman/AppData/Local/Temp/0eae00f9393af1495b5f17fa48ffce7f_6dbb2bd97856b5c40f917d188c7b4e74.cpp",
+		"/C/Users/Arfat Salman/Desktop/john.cpp",
+		"/C/Users/Arfat Salman/AppData/Local/Temp/bac5b1c582a834e68180a802a78f5dda_ad422b6cce3e9e42cda41a8ce2f4d38d-1.cpp",
+		"/C/Users/Arfat Salman/AppData/Local/Temp/bac5b1c582a834e68180a802a78f5dda_ad422b6cce3e9e42cda41a8ce2f4d38d.cpp",
+		"/C/Users/Arfat Salman/AppData/Local/Temp/90e7ade3a8b04294ee14a69d6eb8aab7_52d2621ceda558b741cc7e096ef391c8.cpp",
+		"/C/Users/Arfat Salman/AppData/Local/Temp/99d06736694deaf8e11cf440352dcbd5_526e88c9d418889fbb7c92c9b46423c3.cpp",
+		"/C/Users/Arfat Salman/Desktop/practice-engine/app/main/views.py",
+		"/C/Users/Arfat Salman/Desktop/practice-engine/app/main/__init__.py",
+		"/C/Users/Arfat Salman/Desktop/practice-engine/app/auth/__init__.py",
+		"/C/Users/Arfat Salman/Desktop/practice-engine/app/auth/views.py",
+		"/C/Users/Arfat Salman/Desktop/practice-engine/app/__init__.py",
+		"/C/Users/Arfat Salman/Desktop/practice-engine/app/models.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/api_0_1/resources/New Text Document.txt",
+		"/C/Users/Arfat Salman/Desktop/emma.hs",
+		"/C/Users/Arfat Salman/Desktop/Rec/app/__init__.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/api_0_1/EPBase.py",
+		"/C/Users/Arfat Salman/Desktop/file.py",
+		"/C/Users/Arfat Salman/Desktop/New Folder/stylesheet.css",
+		"/C/Users/Arfat Salman/Desktop/apt.py",
+		"/C/Users/Arfat Salman/AppData/Local/Temp/1bea1aab4c96dbe9f5b8eee20eb1918f_80f1233910b460d4dd5c2fbc4482ee44.cpp",
+		"/C/Users/Arfat Salman/AppData/Local/Temp/5671b92bff4af3535d60cd783d5037e2_a5bc83b9887d64320ea7990fcd7101cf.py",
+		"/C/Users/Arfat Salman/Desktop/neo4j-flask/run.py",
+		"/C/Users/Arfat Salman/Desktop/neo4j-flask/blog/templates/layout.html",
+		"/C/Users/Arfat Salman/Desktop/neo4j-flask/blog/__init__.py",
+		"/C/Users/Arfat Salman/Desktop/neo4j-flask/blog/models.py",
+		"/C/Users/Arfat Salman/Desktop/prog.py",
+		"/F/Users/Arfat Salman/Downloads/3e4a40176ce3dc321ecdee04fb66c1e0_a522c76ad4147db5d5a90130817ba8d8.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/manage.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/webview/forms.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/venv/Lib/site-packages/flask_restful/reqparse.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/api_0_1/messages.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/templates/deals.html",
+		"/C/Users/Arfat Salman/Desktop/a.bat",
+		"/C/Users/Arfat Salman/Desktop/dealflow/venv/Lib/site-packages/flask_restful/__init__.py",
+		"/C/Users/Arfat Salman/Google Drive/Chegg/thread.hs",
+		"/C/xampp/htdocs/Arfat/styles.css",
+		"/C/Users/Arfat Salman/Desktop/dealflow/Procfile",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/api_0_1/resources/auth.py",
+		"/C/Users/Arfat Salman/Desktop/practice-engine/manage.py",
+		"/C/Users/Arfat Salman/Desktop/func.py",
+		"/C/Python27/Lib/functools.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/migrations/env.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/static/js/script.js",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/templates/_macros.html",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/templates/login.html",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/templates/auth.html",
+		"/C/Users/Arfat Salman/Desktop/practice-engine/app/question/forms.py",
+		"/C/Users/Arfat Salman/Desktop/practice-engine/app/main/forms.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/venv/Lib/site-packages/flask_jwt_extended/utils.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/static/js/query.js",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/auth.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/jwt.py",
+		"/C/Users/Arfat Salman/Desktop/practice-engine/app/question/__init__.py",
+		"/C/Users/Arfat Salman/Desktop/practice-engine/app/question/views.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/webview/index.html",
+		"/C/Users/Arfat Salman/Desktop/de.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/venv/Lib/site-packages/flask_jwt/__init__.py",
+		"/C/Users/Arfat Salman/Desktop/practice-engine/app/utilities.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/venv/Lib/site-packages/flask/app.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/venv/Lib/site-packages/flask/__main__.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/migrations/versions/1bc247a9c689_.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/migrations/versions/d9bdef50709e_.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/migrations/versions/3c235f36293d_.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/migrations/versions/e202bbec2883_.py",
+		"/C/Users/Arfat Salman/Desktop/practice-engine/config.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/migrations/versions/08cc16d5a2ad_.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/migrations/versions/ab93055b742f_.py",
+		"/C/Users/Arfat Salman/Desktop/practice-engine/tests/test_main.py",
+		"/C/Users/Arfat Salman/Desktop/practice-engine/tests/test_questions.py",
+		"/C/Users/Arfat Salman/Desktop/practice-engine/tests/test_basics.py",
+		"/C/Users/Arfat Salman/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Arfat Salman/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Arfat Salman/AppData/Roaming/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
+		"/C/Users/Arfat Salman/AppData/Roaming/Sublime Text 2/Packages/User/Python.sublime-settings",
+		"/C/Users/Arfat Salman/AppData/Roaming/Sublime Text 2/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/schema.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/venv/Lib/site-packages/googleapiclient/discovery.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/venv/Lib/site-packages/oauth2client/tools.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/venv/Lib/site-packages/oauth2client/contrib/flask_util.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/venv/Lib/site-packages/oauth2client/crypt.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/venv/Lib/site-packages/googleapiclient/errors.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/venv/Lib/site-packages/googleapiclient/__init__.py",
+		"/C/Users/Arfat Salman/AppData/Local/Temp/client_secret_894849869579-13d037sh0mqkec33q53d63h25nlbcm71.apps.googleusercontent.com.json"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"test_client",
+			">\n",
+			"join",
+			"location",
+			"')}}\n",
+			"Property",
+			"Save",
+			"\")",
+			"Base",
+			"Namespace",
+			"namespace_class",
+			"parse_args",
+			">\n",
+			"render_field",
+			"DataRequired",
+			"jwt_req",
+			">\n",
+			"current_",
+			"current_identity",
+			"if user != self.current_identity:\n        #     return abort(403,\n        #                  message='The user %s is not authorized to create category for %s' % (self.current_identity.name, user.name))\n",
+			"current_identity",
+			"')\n",
+			"Iasmos",
+			"DEAL",
+			"original_handler",
+			"error_router",
+			"User",
+			"auto",
+			"generate_password_hash",
+			"Deal",
+			"api_bp",
+			"error",
+			"CREATE TABLE",
+			"SALES",
+			"TO_date",
+			"gross sales AMOUNT ",
+			"specgram",
+			"hide_options",
+			"))\n",
+			"preview",
+			".panel",
+			"Next Q",
+			"remove",
+			"ilter",
+			"tag",
+			"tags",
+			"add",
+			"username",
+			"submit",
+			"upvote",
+			"height",
+			"sol-pre",
+			"solution",
+			"></",
+			"tags",
+			"check",
+			"MathJax",
+			"updating",
+			"tagit",
+			"select",
+			"streak",
+			"strip",
+			"limit",
+			"foo",
+			"show_op",
+			"func.sum",
+			"Solution.up",
+			"questions_solved",
+			"ques_solved",
+			"questions_solved",
+			"ques_solved",
+			"questions_solved",
+			"unsol",
+			"_clear",
+			"delete",
+			"_crea",
+			"_load_user",
+			"login_required",
+			"session_protected",
+			"send",
+			"_create",
+			"checks()",
+			"reload",
+			"favourite",
+			"#fav",
+			"#down",
+			"#upvo",
+			"to-e",
+			"desc"
+		],
+		"highlight": true,
+		"in_selection": true,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "models.py",
+					"settings":
+					{
+						"buffer_size": 8778,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								464,
+								464
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3280.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "views.py",
+					"settings":
+					{
+						"buffer_size": 3848,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1469,
+								1469
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "__init__.py",
+					"settings":
+					{
+						"buffer_size": 276,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								89,
+								151
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 54.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "/C/Users/Arfat Salman/Desktop/dealflow/config.py",
+					"settings":
+					{
+						"buffer_size": 1474,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								972,
+								972
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 162.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Users/Arfat Salman/Desktop/Rec/fill_random_data.py",
+					"settings":
+					{
+						"buffer_size": 4090,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4065,
+								4065
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1693.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 35.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.472181551977,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 30.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 35.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/Users/Arfat Salman/Desktop/practice-engine/app/templates/popular_tags.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

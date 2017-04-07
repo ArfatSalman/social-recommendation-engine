@@ -1,0 +1,44 @@
+{% from "_macros.html" import render_field, render_tags, user_box %}
+{% extends "_base.html" %}
+
+{% block content%}
+
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<div class="panel panel-default">
+			  <div class="panel-body">
+				
+				{% for row in current_user.follow_feed() %}
+				<div class="panel panel-default">
+
+					<div class="panel-body">
+						<h4>Tags</h4>
+						{{render_tags(current_user.get_post_tags(row.posts.id))}}
+						<h3>{{row.posts.title}}</h3>
+						<p>{{row.posts.text}}</p>
+						
+						<p>Posted on {{row.posts.date}}</p>
+
+						{{user_box(row.user)}}
+						
+						{% if current_user.has_liked_post(row.posts.id) %}
+							<button type="button" class="btn btn-success">Liked</button>
+						{% else %}
+							<form action="/like-post" method="POST">
+								{{like.csrf_token}}
+								{{like.post_id(value=row.posts.id)}}
+								{{like.submit(class='btn btn-info')}}
+							</form>
+						{% endif %}
+					</div>
+				</div>
+				{% else %}
+					<h4>No posts</h4>
+				{% endfor %}
+
+			  </div>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}
