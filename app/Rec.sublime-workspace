@@ -600,6 +600,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Arfat Salman/AppData/Local/Temp/c85c323d5953e859f374b1e0e5d083f9_6b6e5305c964838c4273acd7c62f8bef.cpp",
 		"/C/Users/Arfat Salman/Desktop/dealflow/apis/api_0_1/resources/user.py",
 		"/C/Users/Arfat Salman/Desktop/dealflow/apis/templates/_base.html",
 		"/C/Users/Arfat Salman/Desktop/dealflow/apis/templates/index.html",
@@ -726,8 +727,7 @@
 		"/C/Users/Arfat Salman/Desktop/dealflow/venv/Lib/site-packages/oauth2client/contrib/flask_util.py",
 		"/C/Users/Arfat Salman/Desktop/dealflow/venv/Lib/site-packages/oauth2client/crypt.py",
 		"/C/Users/Arfat Salman/Desktop/dealflow/venv/Lib/site-packages/googleapiclient/errors.py",
-		"/C/Users/Arfat Salman/Desktop/dealflow/venv/Lib/site-packages/googleapiclient/__init__.py",
-		"/C/Users/Arfat Salman/AppData/Local/Temp/client_secret_894849869579-13d037sh0mqkec33q53d63h25nlbcm71.apps.googleusercontent.com.json"
+		"/C/Users/Arfat Salman/Desktop/dealflow/venv/Lib/site-packages/googleapiclient/__init__.py"
 	],
 	"find":
 	{
@@ -866,8 +866,8 @@
 						"selection":
 						[
 							[
-								464,
-								464
+								6838,
+								6838
 							]
 						],
 						"settings":
@@ -877,7 +877,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3280.0,
+						"translation.y": 3334.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -981,8 +981,8 @@
 						"selection":
 						[
 							[
-								4065,
-								4065
+								1367,
+								2562
 							]
 						],
 						"settings":
@@ -992,7 +992,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1693.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

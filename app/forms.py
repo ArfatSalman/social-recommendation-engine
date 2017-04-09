@@ -1,6 +1,7 @@
 from flask_wtf import FlaskForm
 from wtforms.validators import Required
 from wtforms import StringField, SubmitField, PasswordField, TextAreaField, HiddenField
+from wtforms import SelectField
 
 class RegistrationForm(FlaskForm):
 	email = StringField('Email', validators=[Required()])
@@ -16,6 +17,9 @@ class LoginForm(FlaskForm):
 class PostForm(FlaskForm):
 	title = StringField('Title', validators=[Required()])
 	tags = StringField('Tags', validators=[Required()])
+	category = SelectField('Category', choices=[('movies', 'Movies'),
+												('articles', 'Articles'),
+												('songs', 'Songs')])
 	text = TextAreaField('Text', validators=[Required()])
 	submit = SubmitField('Post')
 

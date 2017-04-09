@@ -23,6 +23,10 @@ class User(GraphObject, UserMixin):
     def __init__(self, email=''):
         return User.select(graph, email).first()
 
+    @classmethod
+    def get_user(cls, email):
+        return cls.select(graph, email).first()
+        
     def get_id(self):
         return self.email
 
@@ -259,6 +263,15 @@ class User(GraphObject, UserMixin):
         if user:
             return bcrypt.verify(password, user['password'])
         return False
+
+    @staticmethod
+    def get_tags(tag):
+        query="""
+            MATCH (tag:Tag)
+            WHERE tag.name CONTAINS {partial_tag}
+            RETURN COLLECT(tag) AS tags
+        """
+        return graph.run(query, partial_tag=tag)
 
 
 def timestamp():

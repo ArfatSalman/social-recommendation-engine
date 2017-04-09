@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, abort, flash
-from flask import url_for, redirect
+from flask import url_for, redirect, jsonify
 from models import User, graph
 from flask_login import LoginManager, login_user, logout_user, login_required, current_user
 
@@ -26,6 +26,9 @@ def post():
         title = post_form.title.data
         tags = post_form.tags.data
         text = post_form.text.data
+        category = post_form.category.data
+        tags = category + ',' + tags
+
 
         if not current_user.add_post(title, tags, text):
             flash('Post was unsuccessful', 'danger')
@@ -48,6 +51,13 @@ def like_post():
         flash('Post like successful.','success')
     return redirect(url_for('.index'))
 
+
+@app.route('/get-tags')
+@login_required
+def get_tags():
+    partial_tag = request.args.get('q', "")
+    record_list = User.get_tags(partial_tag)
+    return jsonify(tags=record_list.evaluate())
 
 @app.route('/follow', methods=['POST'])
 def follow():
@@ -81,7 +91,7 @@ def unfollow():
 def profile(email):
     form = FollowForm()
     unfollow = UnfollowForm()
-    return render_template('profile.html', user_node=User.find_user_node(email), 
+    return render_template('profile.html', user_node=User.get_user(email), 
         form=form, unfollow=unfollow)
 
 

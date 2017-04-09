@@ -3,11 +3,17 @@
 
 {% block content %}
 	<div class="col-md-6 col-md-offset-1">
-		<h3>My posts</h3>
+		<h3>Posts</h3>
 		<div class="panel panel-default">
 			<div class="panel-body">
+				{% if current_user.email == user_node.email %}
+					{% set user = current_user %}
+				{% else %}
+					{% set user = user_node %}
+				{% endif %}
+
 				
-				{% for row in current_user.get_recent_post() %}
+				{% for row in user.get_recent_post() %}
 				<div class="panel panel-default">
 					
 					<div class="panel-body">
@@ -63,15 +69,18 @@
 	<div class="col-md-5">
 		<h3>People who {% if current_user.email == user_node.email %} you {% else %} {{user_node.username}} {% endif %}are following</h3>
 
-		{% for row in current_user.follows_users() %}
+		{% for row in user_node.follows_users() %}
 			<div class="recommended-user">
 				<h4><a href="{{url_for('.profile', email=row.user.email)}}">{{row.user.username}}</a></h4>
 				
-				<form method="POST" action="/unfollow">
-					{{unfollow.csrf_token}}
-					{{unfollow.email(value=row.user.email)}}
-					{{unfollow.unfollow(class="btn btn-warning")}}
-				</form>
+				{% if current_user.email == user_node.email %}
+					<form method="POST" action="/unfollow">
+						{{unfollow.csrf_token}}
+						{{unfollow.email(value=row.user.email)}}
+						{{unfollow.unfollow(class="btn btn-warning")}}
+					</form>
+				{% endif %}
+
 			</div>
 		{% else %}
 			No users
@@ -79,7 +88,7 @@
 	</div>
 
 	<div class="col-md-5">
-		<h3>People who follow {% if current_user.email == user_node.email %}you{% else %} {{user_node.username}} {% endif %}</h3>
+		<h3>People who follow {% if current_user.email == user_node.email %} you {% else %} {{user_node.username}} {% endif %}</h3>
 
 		{% for row in current_user.following_users() %}
 			<div class="recommended-user">

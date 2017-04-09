@@ -2,11 +2,10 @@
 from app.models import User
 import forgery_py as feed
 from app.views import app
+from app.models import graph
 from random import choice, sample, randint
 
 GMAIL = '@gmail.com'
-
-USER = ['arfat']
 
 USERS = ['arfat', 'Nga', 'Wen', 'Armanda', 'Wendolyn', 
          'Alane', 'Clarinda', 'Dorthey', 'Michelle', 
@@ -28,6 +27,8 @@ USERS = ['arfat', 'Nga', 'Wen', 'Armanda', 'Wendolyn',
          'Mindy', 'Alma', 'Lenny', 'Cathi', 'Audie', 'Nathalie', 
          'Ingrid', 'Curtis', 'Isa', 'Janette', 'Jacques', 
          'Annamarie', 'Ashanti', 'Joyce', 'Gertha', 'Monroe']
+
+CAT = ['articles', 'songs', 'movies']
 
 TAGS = ['pedal', 'four', 'smile', 'honorable', 'raspy', 
         'uncovered', 'pig', 'rule', 'drag', 'neck', 
@@ -55,6 +56,19 @@ app.config['WTF_CSRF_ENABLED'] = False
 
 PASS = '12345'
 test_client = app.test_client()
+
+
+def get_all_post_id():
+    query="""
+        MATCH (p:Post)
+        RETURN COLLECT(p.id)
+    """
+    return graph.run(query).evaluate()
+
+def like_post(post_id):
+    return test_client.post('/like-post',data=dict(post_id=post_id), 
+        follow_redirects=True)
+
 
 def register_all_users():
     for user in USERS:
@@ -91,6 +105,7 @@ def add_post():
     return test_client.post('/post', data=dict(
         title=feed.lorem_ipsum.title(),
         tags=get_tags(),
+        category=choice(CAT),
         text=feed.lorem_ipsum.paragraphs(5)), follow_redirects=True)
 
 def follow():
@@ -98,6 +113,13 @@ def follow():
     return test_client.post('/follow', 
             data=dict(
                 email=email), follow_redirects=True)
+
+def like_random_posts(limit):
+    post_ids = get_all_post_id()
+    for i in range(limit):
+        login(choose_user(), PASS)
+        like_post(choice(post_ids))
+        logout()
 
 def random_data():
     login(choose_user(), PASS)
@@ -118,3 +140,5 @@ def random_data():
 if __name__ == "__main__":
     for i in range(1, 100):
         random_data()
+
+    like_random_posts(100)
