@@ -1,3 +1,4 @@
+import os
 from py2neo import Graph, Node, Relationship, watch
 from py2neo.ogm import GraphObject, Property
 from uuid import uuid4
@@ -5,10 +6,10 @@ from datetime import datetime
 from passlib.hash import bcrypt
 from flask_login import UserMixin, current_user
 
-URL = 'http://localhost:7474'
+URL = os.environ.get('NEO4J_URL') or 'http://localhost:7474'
 
-username = 'neo4j'
-password = 'arfat78692'
+username = os.environ.get('NEO4J_USER') or 'neo4j'
+password = os.environ.get('NEO4J_PASS') or 'arfat78692'
 
 graph = Graph(URL + '/db/data/', username=username, password=password)
 
