@@ -1,2 +1,28 @@
-# social-recommendation-engine
-An basic implementation of Recommendations in Neo4j
+appdirs==1.4.0
+bcrypt==3.1.2
+cffi==1.9.1
+click==6.7
+Flask==0.12
+Flask-Login==0.4.0
+Flask-Script==2.0.5
+Flask-WTF==0.14.2
+ForgeryPy==0.1
+gunicorn==19.7.1
+itsdangerous==0.24
+Jinja2==2.9.5
+MarkupSafe==0.23
+numpy==1.12.1
+packaging==16.8
+pandas==0.19.2
+passlib==1.7.1
+py2neo==3.1.2
+pycparser==2.17
+pyparsing==2.1.10
+python-dateutil==2.6.0
+pytz==2016.10
+PyYAML==3.12
+scikit-learn==0.18.1
+six==1.10.0
+twitter==1.17.1
+Werkzeug==0.11.15
+WTForms==2.1
