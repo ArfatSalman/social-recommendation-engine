@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REC</title>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/bootstrap.css')}}">
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
 
     <link rel="stylesheet" href="{{url_for('static', filename='css/app.css')}}">
 
@@ -18,9 +19,8 @@
 </head>
 
 <body>
-   
+    <nav class="navbar navbar-default">
         <div class="container-fluid">
-             <nav class="navbar navbar-default">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -29,16 +29,18 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{url_for('.index', _external=True)}}">Rec</a>
+                <a class="navbar-brand" href="{{url_for('.index', _external=True)}}">Recomm</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 {% if current_user.is_authenticated %}
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="{{url_for('.logout')}}">Logout</a></li>
-                    </ul>
+                <a type="button" href="{{url_for('.post')}}" class="btn btn-primary navbar-btn">Share a Post</a>
+                
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="{{url_for('.logout')}}">Logout</a></li>
+                </ul>
 
-                    <p class="navbar-text navbar-right">Signed in as <a href="{{url_for('.profile', email=current_user.email, _external=True)}}" class="navbar-link">{{current_user.username}}</a></p>
+                <p class="navbar-text navbar-right">Signed in as <a href="{{url_for('.profile', email=current_user.email, _external=True)}}" class="navbar-link">{{current_user.username}}</a></p>
                 {% else %}
 
                     <ul class="nav navbar-nav navbar-right">
@@ -49,6 +51,7 @@
             </div>
             <!-- /.navbar-collapse -->
         <!-- /.container-fluid -->
+        </div>
     </nav>
     
     <div class="container-fluid">

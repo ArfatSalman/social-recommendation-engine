@@ -4,12 +4,32 @@
 		"selected_items":
 		[
 			[
-				"fo",
-				"follow"
+				"like",
+				"like_random_posts"
+			],
+			[
+				"lo",
+				"logout"
 			],
 			[
 				"cho",
-				"choose_user"
+				"choice"
+			],
+			[
+				"get",
+				"get_all_post_id"
+			],
+			[
+				"fol",
+				"follow_redirects"
+			],
+			[
+				"ch",
+				"choice"
+			],
+			[
+				"fo",
+				"follow"
 			],
 			[
 				"log",
@@ -22,10 +42,6 @@
 			[
 				"te",
 				"test_client"
-			],
-			[
-				"get",
-				"get_tags"
 			],
 			[
 				"re",
@@ -498,22 +514,6 @@
 			[
 				"_te",
 				"_test_deal_get_by_id"
-			],
-			[
-				"delete",
-				"delete_item"
-			],
-			[
-				"i",
-				"insert_item"
-			],
-			[
-				"d",
-				"d"
-			],
-			[
-				"class",
-				"classmethod"
 			]
 		]
 	},
@@ -523,7 +523,31 @@
 			"file": "models.py",
 			"settings":
 			{
-				"buffer_size": 8778,
+				"buffer_size": 9575,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/index.html",
+			"settings":
+			{
+				"buffer_size": 1233,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "forms.py",
+			"settings":
+			{
+				"buffer_size": 1339,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/post.html",
+			"settings":
+			{
+				"buffer_size": 6110,
 				"line_ending": "Windows"
 			}
 		},
@@ -531,7 +555,15 @@
 			"file": "views.py",
 			"settings":
 			{
-				"buffer_size": 3848,
+				"buffer_size": 4126,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/_base.html",
+			"settings":
+			{
+				"buffer_size": 4323,
 				"line_ending": "Windows"
 			}
 		},
@@ -544,19 +576,67 @@
 			}
 		},
 		{
-			"file": "/C/Users/Arfat Salman/Desktop/dealflow/config.py",
+			"file": "/C/Users/Arfat Salman/Desktop/ud845-Pets-lesson-two/app/src/main/java/com/example/android/pets/EditorActivity.java",
 			"settings":
 			{
-				"buffer_size": 1474,
-				"line_ending": "Windows"
+				"buffer_size": 7347,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/C/Users/Arfat Salman/Desktop/Rec/fill_random_data.py",
+			"file": "/C/Users/Arfat Salman/Desktop/ud845-Pets-lesson-two/app/src/main/res/values/arrays.xml",
 			"settings":
 			{
-				"buffer_size": 4090,
-				"line_ending": "Windows"
+				"buffer_size": 963,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Arfat Salman/Desktop/ud845-Pets-lesson-two/app/src/main/java/com/example/android/pets/CatalogActivity.java",
+			"settings":
+			{
+				"buffer_size": 8157,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Arfat Salman/Desktop/ud845-Pets-lesson-two/app/src/main/res/layout/activity_editor.xml",
+			"settings":
+			{
+				"buffer_size": 4232,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Arfat Salman/Desktop/ud845-Pets-lesson-two/app/src/main/res/values/styles.xml",
+			"settings":
+			{
+				"buffer_size": 2734,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Arfat Salman/Desktop/ud845-Pets-lesson-two/app/src/main/res/values/dimens.xml",
+			"settings":
+			{
+				"buffer_size": 874,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Arfat Salman/Desktop/ud845-Pets-lesson-two/app/src/main/res/menu/menu_editor.xml",
+			"settings":
+			{
+				"buffer_size": 1232,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Arfat Salman/Desktop/ud845-Pets-lesson-two/app/src/main/res/menu/menu_catalog.xml",
+			"settings":
+			{
+				"buffer_size": 1242,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -600,12 +680,22 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Arfat Salman/Desktop/ud845-Pets-lesson-two/app/src/main/java/com/example/android/pets/data/PetContract.java",
+		"/C/Users/Arfat Salman/Desktop/ud845-Pets-lesson-two/app/src/main/res/values/strings.xml",
+		"/C/Users/Arfat Salman/Desktop/ud845-Pets-lesson-two/app/src/main/res/layout/activity_catalog.xml",
+		"/C/Users/Arfat Salman/Desktop/ud845-Pets-lesson-two/app/src/main/res/values/styles.xml",
+		"/C/Users/Arfat Salman/Desktop/ud845-Pets-lesson-two/app/src/main/AndroidManifest.xml",
+		"/C/Users/Arfat Salman/Desktop/Rec/app/templates/profile.html",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/models.py",
+		"/C/Users/Arfat Salman/Desktop/Rec/fill_random_data.py",
+		"/C/Users/Arfat Salman/Desktop/practice-engine/app/question/views.py",
+		"/C/Users/Arfat Salman/Desktop/Rec/app/views.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/config.py",
 		"/C/Users/Arfat Salman/AppData/Local/Temp/c85c323d5953e859f374b1e0e5d083f9_6b6e5305c964838c4273acd7c62f8bef.cpp",
 		"/C/Users/Arfat Salman/Desktop/dealflow/apis/api_0_1/resources/user.py",
 		"/C/Users/Arfat Salman/Desktop/dealflow/apis/templates/_base.html",
 		"/C/Users/Arfat Salman/Desktop/dealflow/apis/templates/index.html",
 		"/C/Users/Arfat Salman/Desktop/dealflow/apis/admin_page.py",
-		"/C/Users/Arfat Salman/Desktop/dealflow/apis/models.py",
 		"/C/Users/Arfat Salman/Desktop/dealflow/apis/webview/views.py",
 		"/C/Users/Arfat Salman/Desktop/dealflow/apis/__init__.py",
 		"/C/Users/Arfat Salman/Desktop/dealflow/apis/api_0_1/__init__.py",
@@ -614,12 +704,10 @@
 		"/C/Users/Arfat Salman/Desktop/dealflow/apis/webview/__init__.py",
 		"/C/Users/Arfat Salman/Desktop/Rec/app/templates/index.html",
 		"/C/Users/Arfat Salman/Desktop/Rec/app/forms.py",
-		"/C/Users/Arfat Salman/Desktop/Rec/app/views.py",
 		"/C/Users/Arfat Salman/Desktop/Rec/app/models.py",
 		"/C/Users/Arfat Salman/Desktop/Rec/app/static/css/app.css",
 		"/C/Users/Arfat Salman/Desktop/Rec/app/templates/_base.html",
 		"/C/Users/Arfat Salman/Desktop/Rec/app/templates/_macros.html",
-		"/C/Users/Arfat Salman/Desktop/Rec/app/templates/profile.html",
 		"/C/Users/Arfat Salman/Desktop/Rec/app/templates/followings.html",
 		"/C/Users/Arfat Salman/Desktop/Rec/app/templates/friends-feed.html",
 		"/C/Users/Arfat Salman/Desktop/Rec/utility.py",
@@ -630,7 +718,6 @@
 		"/C/Users/Arfat Salman/Desktop/dealflow/tests/test_user.py",
 		"/C/Users/Arfat Salman/Desktop/dealflow/apis/api_0_1/resources/deals.py",
 		"/C/Users/Arfat Salman/Desktop/dealflow/apis/api_0_1/utils.py",
-		"/C/Users/Arfat Salman/Desktop/dealflow/config.py",
 		"/C/Users/Arfat Salman/Desktop/Rec/venv/Lib/site-packages/forgery_py/__init__.py",
 		"/C/Users/Arfat Salman/Desktop/dealflow/apis/api_0_1/resources/filter.py",
 		"/D/Experiment/main.cpp",
@@ -699,7 +786,6 @@
 		"/C/Users/Arfat Salman/Desktop/dealflow/apis/auth.py",
 		"/C/Users/Arfat Salman/Desktop/dealflow/apis/jwt.py",
 		"/C/Users/Arfat Salman/Desktop/practice-engine/app/question/__init__.py",
-		"/C/Users/Arfat Salman/Desktop/practice-engine/app/question/views.py",
 		"/C/Users/Arfat Salman/Desktop/dealflow/webview/index.html",
 		"/C/Users/Arfat Salman/Desktop/de.py",
 		"/C/Users/Arfat Salman/Desktop/dealflow/venv/Lib/site-packages/flask_jwt/__init__.py",
@@ -721,13 +807,7 @@
 		"/C/Users/Arfat Salman/AppData/Roaming/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
 		"/C/Users/Arfat Salman/AppData/Roaming/Sublime Text 2/Packages/User/Python.sublime-settings",
 		"/C/Users/Arfat Salman/AppData/Roaming/Sublime Text 2/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
-		"/C/Users/Arfat Salman/Desktop/dealflow/apis/schema.py",
-		"/C/Users/Arfat Salman/Desktop/dealflow/venv/Lib/site-packages/googleapiclient/discovery.py",
-		"/C/Users/Arfat Salman/Desktop/dealflow/venv/Lib/site-packages/oauth2client/tools.py",
-		"/C/Users/Arfat Salman/Desktop/dealflow/venv/Lib/site-packages/oauth2client/contrib/flask_util.py",
-		"/C/Users/Arfat Salman/Desktop/dealflow/venv/Lib/site-packages/oauth2client/crypt.py",
-		"/C/Users/Arfat Salman/Desktop/dealflow/venv/Lib/site-packages/googleapiclient/errors.py",
-		"/C/Users/Arfat Salman/Desktop/dealflow/venv/Lib/site-packages/googleapiclient/__init__.py"
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/schema.py"
 	],
 	"find":
 	{
@@ -859,15 +939,15 @@
 					"file": "models.py",
 					"settings":
 					{
-						"buffer_size": 8778,
+						"buffer_size": 9575,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6838,
-								6838
+								6547,
+								6547
 							]
 						],
 						"settings":
@@ -877,32 +957,31 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3334.0,
+						"translation.y": 2842.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "views.py",
+					"file": "templates/index.html",
 					"settings":
 					{
-						"buffer_size": 3848,
+						"buffer_size": 1233,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1469,
-								1469
+								160,
+								160
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -912,6 +991,116 @@
 				},
 				{
 					"buffer": 2,
+					"file": "forms.py",
+					"settings":
+					{
+						"buffer_size": 1339,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								879,
+								879
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 6.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "templates/post.html",
+					"settings":
+					{
+						"buffer_size": 6110,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5838,
+								5838
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3996.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "views.py",
+					"settings":
+					{
+						"buffer_size": 4126,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3618,
+								3618
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2214.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "templates/_base.html",
+					"settings":
+					{
+						"buffer_size": 4323,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4085,
+								4085
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 216.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
 					"file": "__init__.py",
 					"settings":
 					{
@@ -939,55 +1128,224 @@
 			]
 		},
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
-					"buffer": 3,
-					"file": "/C/Users/Arfat Salman/Desktop/dealflow/config.py",
+					"buffer": 7,
+					"file": "/C/Users/Arfat Salman/Desktop/ud845-Pets-lesson-two/app/src/main/java/com/example/android/pets/EditorActivity.java",
 					"settings":
 					{
-						"buffer_size": 1474,
+						"buffer_size": 7347,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								972,
-								972
+								3653,
+								3654
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 162.0,
+						"translation.y": 1404.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "/C/Users/Arfat Salman/Desktop/Rec/fill_random_data.py",
+					"buffer": 8,
+					"file": "/C/Users/Arfat Salman/Desktop/ud845-Pets-lesson-two/app/src/main/res/values/arrays.xml",
 					"settings":
 					{
-						"buffer_size": 4090,
+						"buffer_size": 963,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1367,
-								2562
+								963,
+								667
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage",
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/C/Users/Arfat Salman/Desktop/ud845-Pets-lesson-two/app/src/main/java/com/example/android/pets/CatalogActivity.java",
+					"settings":
+					{
+						"buffer_size": 8157,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2808.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/C/Users/Arfat Salman/Desktop/ud845-Pets-lesson-two/app/src/main/res/layout/activity_editor.xml",
+					"settings":
+					{
+						"buffer_size": 4232,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1390,
+								1390
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1569.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/C/Users/Arfat Salman/Desktop/ud845-Pets-lesson-two/app/src/main/res/values/styles.xml",
+					"settings":
+					{
+						"buffer_size": 2734,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1680,
+								1680
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 216.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "/C/Users/Arfat Salman/Desktop/ud845-Pets-lesson-two/app/src/main/res/values/dimens.xml",
+					"settings":
+					{
+						"buffer_size": 874,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "/C/Users/Arfat Salman/Desktop/ud845-Pets-lesson-two/app/src/main/res/menu/menu_editor.xml",
+					"settings":
+					{
+						"buffer_size": 1232,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								917,
+								917
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/C/Users/Arfat Salman/Desktop/ud845-Pets-lesson-two/app/src/main/res/menu/menu_catalog.xml",
+					"settings":
+					{
+						"buffer_size": 1242,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
@@ -1028,7 +1386,7 @@
 		"cols":
 		[
 			0.0,
-			0.472181551977,
+			0.0366032210835,
 			1.0
 		],
 		"rows":

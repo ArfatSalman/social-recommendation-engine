@@ -136,19 +136,20 @@ class User(GraphObject, UserMixin):
             return row['tags']
 
     def like_post(self, post_id):
-        """
-        MATCH (u:User {email: "arfat.salman@outlook.com"}),(p:Post{id: "2b12563c-c03d-4211-ae9d-043d150cefc6"})<-[:TAGGED]-(t:Tag)
-        WITH collect(t) as tags, u
-        FOREACH (tag in tags | MERGE (tag)-[d:DEFINES]-(u))
-        RETURN p
+        query="""
+            MATCH (u:User {email: {user_email}}),
+                  (p:Post{id: {post_id}})<-[:TAGGED]-(t:Tag)
+            WITH collect(t) as tags, u
+            FOREACH (tag in tags | MERGE (tag)-[d:DEFINES]-(u))
+            RETURN u
         """
 
-        query="""
-            MATCH (post:Post {id: {post_id}}), (user:User {email: {email}})
-            MERGE (user)-[r:LIKES]->(post)
-            RETURN r
-        """
-        return graph.run(query, post_id=post_id, email=self.email)
+        # query="""
+        #     MATCH (post:Post {id: {post_id}}), (user:User {email: {email}})
+        #     MERGE (user)-[r:LIKES]->(post)
+        #     RETURN r
+        # """
+        return graph.run(query, post_id=post_id, user_email=self.email)
 
     def has_liked_post(self, post_id):
         query = """
@@ -190,17 +191,25 @@ class User(GraphObject, UserMixin):
         return graph.run(query, user_email=self.email, limit=limit)
 
     def get_similar_posts(self):
-        query="""
-            MATCH (you:User)-[:PUBLISHED]->(:Post)<-[:TAGGED]-(tag:Tag),
-                  (they:User)-[:PUBLISHED]->(posts:Post)<-[:TAGGED]-(tag)
-            WHERE you.email = {email} AND you <> they
-            WITH they, 
-                 COLLECT(DISTINCT tag.name) AS tags, 
-                 posts, 
-                 they AS user
-            ORDER BY SIZE(tags) DESC 
-            RETURN user, posts, tags
-        """
+        query="""MATCH (you:User)<-[:DEFINES]-(tag:Tag),
+                  (they:User)<-[:DEFINES]-(tag)
+                WHERE (tag.name <> "articles" AND  tag.name <> "songs" AND tag.name <> "movies") AND you.email = {email} AND you <> they
+                WITH they AS user, COLLECT(DISTINCT tag.name) AS tags
+                MATCH (user)-[:PUBLISHED]->(posts:Post)
+                RETURN user, posts, tags
+                ORDER BY Size(tags) DESC
+            """
+        # query="""
+        #     MATCH (you:User)<-[:DEFINES]-(tag:Tag),
+        #           (they:User)<-[:DEFINES]-(tag)
+        #     WHERE you.email = {email} AND you <> they
+        #     WITH they, 
+        #          COLLECT(DISTINCT tag.name) AS tags, 
+        #          posts, 
+        #          they AS user
+        #     ORDER BY SIZE(tags) DESC 
+        #     RETURN user, posts, tags
+        # """
 
         return graph.run(query, email=self.email)
 
