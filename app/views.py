@@ -138,7 +138,7 @@ def login():
 
         if not user:
             flash('User not found', 'danger')
-            return abort('404')
+            return redirect(url_for('.login'))
 
         if User.verify_user_password(user.email, password):
             login_user(user)
