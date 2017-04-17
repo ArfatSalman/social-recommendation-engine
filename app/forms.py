@@ -19,7 +19,8 @@ class PostForm(FlaskForm):
 	tags = StringField('Tags', validators=[Required()])
 	category = SelectField('Category', choices=[('movies', 'Movies'),
 												('articles', 'Articles'),
-												('songs', 'Songs')])
+												('songs', 'Songs'),
+												('books', 'Books')])
 	text = TextAreaField('Text', validators=[Required()])
 	submit = SubmitField('Post')
 

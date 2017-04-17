@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"font",
+				"font-weight"
+			],
+			[
+				"navbar-t",
+				"navbar-text"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"use",
+				"username"
+			],
+			[
+				"ca",
+				"category"
+			],
+			[
+				"cate",
+				"category_rule"
+			],
+			[
+				"user",
+				"user_email"
+			],
+			[
+				"get",
+				"get_post_tags"
+			],
+			[
+				"cat",
+				"cat_node"
+			],
+			[
 				"like",
 				"like_random_posts"
 			],
@@ -14,10 +50,6 @@
 			[
 				"cho",
 				"choice"
-			],
-			[
-				"get",
-				"get_all_post_id"
 			],
 			[
 				"fol",
@@ -58,10 +90,6 @@
 			[
 				"h",
 				"h4	Tag"
-			],
-			[
-				"user",
-				"users"
 			],
 			[
 				"chec",
@@ -232,10 +260,6 @@
 				"deals_paginate"
 			],
 			[
-				"cat",
-				"cat_fields"
-			],
-			[
 				"ap",
 				"append"
 			],
@@ -336,16 +360,8 @@
 				"UserMixin"
 			],
 			[
-				"cate",
-				"category"
-			],
-			[
 				"check",
 				"check_same_user"
-			],
-			[
-				"ca",
-				"categories"
 			],
 			[
 				"Sec",
@@ -498,32 +514,56 @@
 			[
 				"cl",
 				"client"
-			],
-			[
-				"test",
-				"test_user_login"
-			],
-			[
-				"parse",
-				"parser"
-			],
-			[
-				"url",
-				"url_for"
-			],
-			[
-				"_te",
-				"_test_deal_get_by_id"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
+			"file": "models.py",
+			"settings":
+			{
+				"buffer_size": 10223,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/index.html",
+			"settings":
+			{
+				"buffer_size": 2200,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "templates/_base.html",
 			"settings":
 			{
-				"buffer_size": 4115,
+				"buffer_size": 4817,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/post.html",
+			"settings":
+			{
+				"buffer_size": 6240,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "views.py",
+			"settings":
+			{
+				"buffer_size": 4281,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Arfat Salman/Desktop/dealflow/apis/api_0_1/resources/deals.py",
+			"settings":
+			{
+				"buffer_size": 8507,
 				"line_ending": "Windows"
 			}
 		},
@@ -536,11 +576,35 @@
 			}
 		},
 		{
-			"file": "templates/index.html",
+			"file": "templates/_macros.html",
 			"settings":
 			{
-				"buffer_size": 1143,
-				"line_ending": "Unix"
+				"buffer_size": 859,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Arfat Salman/Desktop/dealflow/apis/api_0_1/resources/filter.py",
+			"settings":
+			{
+				"buffer_size": 3011,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Arfat Salman/Desktop/dealflow/config.py",
+			"settings":
+			{
+				"buffer_size": 1474,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Arfat Salman/Desktop/dealflow/apis/api_0_1/__init__.py",
+			"settings":
+			{
+				"buffer_size": 4499,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -584,13 +648,17 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Arfat Salman/Desktop/Rec/app/__init__.py",
-		"/C/Users/Arfat Salman/Desktop/Rec/app/models.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/models.py",
+		"/C/Users/Arfat Salman/Desktop/dealflow/apis/templates/_macros.html",
+		"/C/Users/Arfat Salman/Desktop/Rec/app/templates/login.html",
 		"/C/Users/Arfat Salman/Desktop/Rec/app/templates/index.html",
-		"/C/Users/Arfat Salman/Desktop/Rec/app/forms.py",
-		"/C/Users/Arfat Salman/Desktop/Rec/app/templates/post.html",
-		"/C/Users/Arfat Salman/Desktop/Rec/app/views.py",
 		"/C/Users/Arfat Salman/Desktop/Rec/app/templates/_base.html",
+		"/C/Users/Arfat Salman/Desktop/Rec/app/views.py",
+		"/C/Users/Arfat Salman/Desktop/Rec/app/models.py",
+		"/C/Users/Arfat Salman/Desktop/Rec/app/forms.py",
+		"/C/Users/Arfat Salman/Desktop/Rec/README.md",
+		"/C/Users/Arfat Salman/Desktop/Rec/app/__init__.py",
+		"/C/Users/Arfat Salman/Desktop/Rec/app/templates/post.html",
 		"/C/Users/Arfat Salman/Desktop/ud845-Pets-lesson-two/app/src/main/res/layout/activity_editor.xml",
 		"/C/Users/Arfat Salman/Desktop/ud845-Pets-lesson-two/app/src/main/res/values/styles.xml",
 		"/C/Users/Arfat Salman/Desktop/ud845-Pets-lesson-two/app/src/main/res/values/dimens.xml",
@@ -605,7 +673,6 @@
 		"/C/Users/Arfat Salman/Desktop/ud845-Pets-lesson-two/app/src/main/res/layout/activity_catalog.xml",
 		"/C/Users/Arfat Salman/Desktop/ud845-Pets-lesson-two/app/src/main/AndroidManifest.xml",
 		"/C/Users/Arfat Salman/Desktop/Rec/app/templates/profile.html",
-		"/C/Users/Arfat Salman/Desktop/dealflow/apis/models.py",
 		"/C/Users/Arfat Salman/Desktop/Rec/fill_random_data.py",
 		"/C/Users/Arfat Salman/Desktop/practice-engine/app/question/views.py",
 		"/C/Users/Arfat Salman/Desktop/dealflow/config.py",
@@ -626,7 +693,6 @@
 		"/C/Users/Arfat Salman/Desktop/Rec/app/templates/friends-feed.html",
 		"/C/Users/Arfat Salman/Desktop/Rec/utility.py",
 		"/C/Users/Arfat Salman/Desktop/Rec/app/templates/register.html",
-		"/C/Users/Arfat Salman/Desktop/Rec/app/templates/login.html",
 		"/C/Users/Arfat Salman/Desktop/dealflow/apis/api_0_1/cache.py",
 		"/C/Users/Arfat Salman/Desktop/dealflow/tests/test_user.py",
 		"/C/Users/Arfat Salman/Desktop/dealflow/apis/api_0_1/resources/deals.py",
@@ -688,7 +754,6 @@
 		"/C/Python27/Lib/functools.py",
 		"/C/Users/Arfat Salman/Desktop/dealflow/migrations/env.py",
 		"/C/Users/Arfat Salman/Desktop/dealflow/apis/static/js/script.js",
-		"/C/Users/Arfat Salman/Desktop/dealflow/apis/templates/_macros.html",
 		"/C/Users/Arfat Salman/Desktop/dealflow/apis/templates/login.html",
 		"/C/Users/Arfat Salman/Desktop/dealflow/apis/templates/auth.html",
 		"/C/Users/Arfat Salman/Desktop/practice-engine/app/question/forms.py",
@@ -710,8 +775,7 @@
 		"/C/Users/Arfat Salman/Desktop/dealflow/migrations/versions/e202bbec2883_.py",
 		"/C/Users/Arfat Salman/Desktop/practice-engine/config.py",
 		"/C/Users/Arfat Salman/Desktop/dealflow/migrations/versions/08cc16d5a2ad_.py",
-		"/C/Users/Arfat Salman/Desktop/dealflow/migrations/versions/ab93055b742f_.py",
-		"/C/Users/Arfat Salman/Desktop/practice-engine/tests/test_main.py"
+		"/C/Users/Arfat Salman/Desktop/dealflow/migrations/versions/ab93055b742f_.py"
 	],
 	"find":
 	{
@@ -835,23 +899,78 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "templates/_base.html",
+					"file": "models.py",
 					"settings":
 					{
-						"buffer_size": 4115,
+						"buffer_size": 10223,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1785,
-								1785
+								503,
+								503
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3834.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "templates/index.html",
+					"settings":
+					{
+						"buffer_size": 2200,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								213,
+								213
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 648.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "templates/_base.html",
+					"settings":
+					{
+						"buffer_size": 4817,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2403,
+								2403
 							]
 						],
 						"settings":
@@ -861,7 +980,34 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 486.0,
+						"translation.y": 864.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "templates/post.html",
+					"settings":
+					{
+						"buffer_size": 6240,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5865,
+								5865
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3564.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -869,11 +1015,67 @@
 			]
 		},
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
-					"buffer": 1,
+					"buffer": 4,
+					"file": "views.py",
+					"settings":
+					{
+						"buffer_size": 4281,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1566.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/Users/Arfat Salman/Desktop/dealflow/apis/api_0_1/resources/deals.py",
+					"settings":
+					{
+						"buffer_size": 8507,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7785,
+								7785
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3742.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
 					"file": "templates/login.html",
 					"settings":
 					{
@@ -884,8 +1086,8 @@
 						"selection":
 						[
 							[
-								328,
-								328
+								281,
+								281
 							]
 						],
 						"settings":
@@ -895,25 +1097,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 54.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "templates/index.html",
+					"buffer": 7,
+					"file": "templates/_macros.html",
 					"settings":
 					{
-						"buffer_size": 1143,
+						"buffer_size": 859,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								116,
-								116
+								753,
+								753
 							]
 						],
 						"settings":
@@ -923,6 +1125,89 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/C/Users/Arfat Salman/Desktop/dealflow/apis/api_0_1/resources/filter.py",
+					"settings":
+					{
+						"buffer_size": 3011,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1249,
+								1249
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 681.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/C/Users/Arfat Salman/Desktop/dealflow/config.py",
+					"settings":
+					{
+						"buffer_size": 1474,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								896,
+								978
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 95.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/C/Users/Arfat Salman/Desktop/dealflow/apis/api_0_1/__init__.py",
+					"settings":
+					{
+						"buffer_size": 4499,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2154,
+								2154
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 700.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

@@ -13,10 +13,15 @@ login_manager = LoginManager(app)
 def user_loader(username):
     return User.select(graph, username).first()
 
+
 @app.route('/')
 def index():
+    category = request.args.get('type', None)
+    if category not in ['movies', 'songs', 'books']:
+        category = None
+
     like_form = LikePostForm()
-    return render_template('index.html', like=like_form)
+    return render_template('index.html', like=like_form, category=category)
 
 @app.route('/post', methods=['GET', 'POST'])
 @login_required
@@ -27,10 +32,10 @@ def post():
         tags = post_form.tags.data
         text = post_form.text.data
         category = post_form.category.data
-        tags = category + ',' + tags
+        #tags = category + ',' + tags
 
 
-        if not current_user.add_post(title, tags, text):
+        if not current_user.add_post(title, tags, category, text):
             flash('Post was unsuccessful', 'danger')
             return redirect(url_for('.post'))
 

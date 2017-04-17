@@ -1,16 +1,43 @@
 {% from "_macros.html" import render_field, render_tags, user_box %}
 {% extends "_base.html" %}
 
+{% block style %}
+	<style type="text/css">
+		.col-md-2 > a > img {
+			width: 25px;
+			height: 25px;
+			color: white;
+		}
+	</style>
+{% endblock %}
+
 {% block content %}
 	
 	{% if current_user.is_authenticated %}
 
+<div class="row col-md-offset-1">
+	<div class="col-md-2">
+		<a type="button" class="btn btn-default btn-block" href="{{url_for('.index', type='movies')}}"> <img src="{{url_for('static', filename='Movie.png')}}"> Movies</a>
+	</div>
+	<div class="col-md-2 col-md-offset-1">
+		<a type="button" class="btn btn-default btn-block" href="{{url_for('.index', type='books')}}"> <img src="{{url_for('static', filename='book.png')}}"> &nbsp; Books</a>
+	</div> 
+	<div class="col-md-2 col-md-offset-1">
+		<a type="button" class="btn btn-default btn-block" href="{{url_for('.index', type='articles')}}"> <img src="{{url_for('static', filename='article.png')}}"> Articles</a>
+	</div> 
+	<div class="col-md-2 col-md-offset-1">
+		<a type="button" class="btn btn-default btn-block" href="{{url_for('.index', type='songs')}}"> <img src="{{url_for('static', filename='audio.png')}}"> &nbsp; Songs</a>
+	</div> 
+</div>
+
+<br>
+
 	<div class="row">
-		<div class="col-md-6 col-md-offset-3">
+		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-default">
 			  <div class="panel-body">
 				
-				{% for row in current_user.get_similar_posts() %}
+				{% for row in current_user.get_similar_posts(category) %}
 				<div class="panel panel-default">
 
 					<div class="panel-body">

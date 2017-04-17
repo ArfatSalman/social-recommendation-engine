@@ -6,12 +6,15 @@ from datetime import datetime
 from passlib.hash import bcrypt
 from flask_login import UserMixin, current_user
 
+#URL = 'http://hobby-ehpkpbgfojekgbkepcgcceol.dbs.graphenedb.com:24789'
 URL = os.environ.get('NEO4J_URL') or 'http://localhost:7474'
 
 username = os.environ.get('NEO4J_USER') or 'neo4j'
 password = os.environ.get('NEO4J_PASS') or 'arfat78692'
+#username = 'arfat'
+#password = 'b.4lxNjnlQrV1q.v6XvEvpMOTzQJRmV'
 
-graph = Graph(URL + '/db/data/', username=username, password=password)
+graph = Graph(URL + '/db/data/', username=username, password=password, bolt=False)
 
 # OGM of User Label
 class User(GraphObject, UserMixin):
@@ -31,11 +34,12 @@ class User(GraphObject, UserMixin):
     def get_id(self):
         return self.email
 
-    def add_post(self, title, tags, text):
+    def add_post(self, title, tags, category, text):
         post = Node("Post",
                     id=str(uuid4()),
                     title=title,
                     text=text,
+                    category=category.lower(),
                     timestamp=timestamp(),
                     date=date()
                     )
@@ -44,6 +48,13 @@ class User(GraphObject, UserMixin):
                            "PUBLISHED", 
                             post)
         graph.create(rel)
+
+        # cat_node= Node("Category",
+        #                 name=category)
+
+        # rel = Relationship(post, "IS_TYPE_OF", cat_node)
+        # graph.merge(rel)
+
 
         tags = [tag.strip() for tag in tags.lower().split(',')]
 
@@ -57,6 +68,8 @@ class User(GraphObject, UserMixin):
 
             # Make all the DEFINES rels
             self.make_define_relationships(tag)
+
+
 
         # update weights
         for tag in tags:
@@ -138,19 +151,25 @@ class User(GraphObject, UserMixin):
 
     def like_post(self, post_id):
         query="""
-            MATCH (u:User {email: {user_email}}),
-                  (p:Post{id: {post_id}})<-[:TAGGED]-(t:Tag)
-            WITH collect(t) as tags, u
-            FOREACH (tag in tags | MERGE (tag)-[d:DEFINES]-(u))
-            RETURN u
+        MATCH (p:Post {id: {post_id}}), (u:User {email: {user_email}})
+        MERGE (u)-[rel:LIKES]->(p)
+        RETURN rel
         """
 
-        # query="""
-        #     MATCH (post:Post {id: {post_id}}), (user:User {email: {email}})
-        #     MERGE (user)-[r:LIKES]->(post)
-        #     RETURN r
-        # """
-        return graph.run(query, post_id=post_id, user_email=self.email)
+        graph.run(query, post_id=post_id, user_email=self.email)
+
+        tags = self.get_post_tags(post_id)
+
+        for tag in tags:
+            self.make_define_relationships(tag)
+
+            if self.count_property_exists(tag):
+                # update the relationship's count and weight 
+                self.update_count_weight(tag)
+            else:
+                self.initial_weight_count(tag)
+
+        return True
 
     def has_liked_post(self, post_id):
         query = """
@@ -191,15 +210,20 @@ class User(GraphObject, UserMixin):
 
         return graph.run(query, user_email=self.email, limit=limit)
 
-    def get_similar_posts(self):
+    def get_similar_posts(self, category=None):
+        category_rule = ''
+        if category:
+            category_rule = "WHERE posts.category = \"%s\"" % category    
+        
         query="""MATCH (you:User)<-[:DEFINES]-(tag:Tag),
                   (they:User)<-[:DEFINES]-(tag)
-                WHERE (tag.name <> "articles" AND  tag.name <> "songs" AND tag.name <> "movies") AND you.email = {email} AND you <> they
+                WHERE you.email = {email} AND you <> they
                 WITH they AS user, COLLECT(DISTINCT tag.name) AS tags
                 MATCH (user)-[:PUBLISHED]->(posts:Post)
+                %s
                 RETURN user, posts, tags
                 ORDER BY Size(tags) DESC
-            """
+            """ % category_rule
         # query="""
         #     MATCH (you:User)<-[:DEFINES]-(tag:Tag),
         #           (they:User)<-[:DEFINES]-(tag)
