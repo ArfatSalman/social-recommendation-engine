@@ -136,6 +136,10 @@ def login():
 
         user = User.select(graph, email).first()
 
+        if not user:
+            flash('User not found', 'danger')
+            return abort('404')
+
         if User.verify_user_password(user.email, password):
             login_user(user)
         else:
