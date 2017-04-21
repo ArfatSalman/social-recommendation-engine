@@ -1,6 +1,7 @@
 from flask_wtf import FlaskForm
 from wtforms.validators import Required
 from wtforms import StringField, SubmitField, PasswordField, TextAreaField, HiddenField
+from wtforms import FileField
 from wtforms import SelectField
 
 class RegistrationForm(FlaskForm):
@@ -21,7 +22,9 @@ class PostForm(FlaskForm):
 												('articles', 'Articles'),
 												('songs', 'Songs'),
 												('books', 'Books')])
+	link = StringField('Link', validators=[Required()])
 	text = TextAreaField('Text', validators=[Required()])
+	image = FileField('Image')
 	submit = SubmitField('Post')
 
 class FollowForm(FlaskForm):

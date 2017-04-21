@@ -34,12 +34,14 @@ class User(GraphObject, UserMixin):
     def get_id(self):
         return self.email
 
-    def add_post(self, title, tags, category, text):
+    def add_post(self, title, link, tags, category, text, image_url):
         post = Node("Post",
                     id=str(uuid4()),
                     title=title,
+                    link=link,
                     text=text,
                     category=category.lower(),
+                    image_url=image_url,
                     timestamp=timestamp(),
                     date=date()
                     )
@@ -120,6 +122,14 @@ class User(GraphObject, UserMixin):
 
         return graph.run(query, user_email=self.email, tagname=tagname)
 
+    def remove_tag(self, tagname):
+        query="""
+            MATCH (user:User {email: {user_email}})<-[rel:DEFINES]-(tag:Tag {name: {tagname}})
+            DELETE rel
+        """
+
+        return graph.run(query, user_email=self.email, tagname=tagname)
+    
     def get_todays_recent_posts(self):
         query="""
             MATCH (user:User)-[:PUBLISHED]->(post:Post)<-[:TAGGED]-(tag:Tag)
@@ -171,6 +181,14 @@ class User(GraphObject, UserMixin):
 
         return True
 
+    def tags_that_define_me(self):
+        query="""
+            MATCH (u:User {email: {user_email}})<-[:DEFINES]-(tag:Tag)
+            RETURN COLLECT(DISTINCT tag.name)
+        """
+
+        return graph.run(query, user_email=self.email).evaluate()
+        
     def has_liked_post(self, post_id):
         query = """
             MATCH (u:User {email: {email}}), (p:Post {id: {post_id}}) 

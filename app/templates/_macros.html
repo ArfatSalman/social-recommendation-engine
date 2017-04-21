@@ -21,7 +21,7 @@
 {% macro render_tags(tags) %}
 	<div>
 		{% for tag in tags %}
-			<button type="button" class="btn btn-primary">{{tag}}</button>
+			<button style="border-radius: 5px;" type="button" class="btn btn-default">#{{tag}}</button>
 		{% endfor %}
 	</div>
 {% endmacro %}
@@ -29,7 +29,8 @@
 
 {% macro user_box(user) %}
 	<div class="pull-right userbox">
-		  <img src="{{url_for('static', filename='user.png')}}"> <a href="{{url_for('.profile', email=user.email)}}">{{user.username}}</a>
-		  <br>
+		<a style="border-radius: 5px; padding: 8px 15px 8px 10px;" class="btn btn-default" href="{{url_for('.profile', email=user.email)}}">
+			<img width="30px" src="{{url_for('static', filename='user.png')}}"> {{user.username}}
+		</a>
 	</div>
 {% endmacro %}

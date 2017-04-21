@@ -3,13 +3,43 @@
 
 {% block content %}
 	<div class="col-md-6 col-md-offset-1">
-		<h3>Posts</h3>
+		
+		{% set is_local_user = False %}
+		{% set user = user_node %}
+		
+		{% if current_user.email == user_node.email %} 
+			
+			{% set user = current_user %}
+			{% set is_local_user = True %}
+		{% endif %}
+			
+
+		<h4>Tags that define {% if is_local_user %} me {% else %} {{user.username}}{% endif %}</h4>
+		
+		{% if is_local_user %}
+			<p><small>Click to remove</small></p>
+		{% endif %}
+
+		{% for tag in user.tags_that_define_me() %}
+			{% if is_local_user %}
+				<a class="btn btn-default" href="{{url_for('.remove_tag', tag=tag)}}"> {{tag}}  <span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>
+			{% else %}
+				<button class="btn btn-default">{{tag}}</button>
+			{% endif %}
+		{% else %}
+			<h5>There are no tags yet.</h5>
+		{% endfor %}
+	
+
+
+		<h3>{% if current_user.email == user_node.email %} My {% else %} {{user_node.username}}'s {% endif %}Posts</h3>
+		
 		<div class="panel panel-default">
 			<div class="panel-body">
 				{% if current_user.email == user_node.email %}
-					{% set user = current_user %}
+					
 				{% else %}
-					{% set user = user_node %}
+					
 				{% endif %}
 
 				
@@ -50,14 +80,14 @@
 					</form>
 				</div>
 			{% else %}
-				<h3>No user</h3>
+				<h5> There are no users. </h5>
 			{% endfor %}
 		</div>
 	{% else %}
 		{% for common in current_user.get_commonality_of_user(user_node.email) %}
 
 			{% if common['likes'] %}
-				<p>{{user_node.name}} likes {{common['likes']}} of your posts.</p>
+				<p>{{user_node.username}} likes {{common['likes']}} of your posts.</p>
 			{% endif %}
 		
 			<h4>Tags common between you and {{user_node.username}}</h4>
@@ -71,7 +101,7 @@
 
 		{% for row in user_node.follows_users() %}
 			<div class="recommended-user">
-				<h4><a href="{{url_for('.profile', email=row.user.email)}}">{{row.user.username}}</a></h4>
+				<h4><a style="color: white;" href="{{url_for('.profile', email=row.user.email)}}">{{row.user.username}}</a></h4>
 				
 				{% if current_user.email == user_node.email %}
 					<form method="POST" action="/unfollow">
@@ -83,7 +113,7 @@
 
 			</div>
 		{% else %}
-			No users
+			<h5> There are no users. </h5>
 		{% endfor %}
 	</div>
 
@@ -95,7 +125,7 @@
 				<h4><a href="{{url_for('.profile', email=row.user.email)}}">{{row.user.username}}</a></h4>
 			</div>
 		{% else %}
-			No users
+			<h5> There are no users. </h5>
 		{% endfor %}
 	</div>
 

@@ -215,13 +215,16 @@
 			<div class="col-md-6 col-md-offset-3">
 				<div class="panel panel-primary">
 					<div class="panel-body">
-						<form method="POST">
+						<form method="POST" enctype="multipart/form-data">
 						{{post_form.csrf_token}}
 
 						{{render_field(post_form.title, class='form-control', placeholder='Title')}}
+						{{render_field(post_form.link, class='form-control', placeholder='Link')}}
 						{{render_field(post_form.category, class='form-control')}}
 						{{render_field(post_form.tags, class='form-control')}}
 						{{render_field(post_form.text, class='form-control')}}
+
+						{{render_field(post_form.image)}}
 
 						{{post_form.submit(class='btn btn-primary btn-block')}}
 					</form>	

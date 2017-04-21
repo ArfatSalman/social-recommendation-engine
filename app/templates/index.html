@@ -41,24 +41,35 @@
 				<div class="panel panel-default">
 
 					<div class="panel-body">
-						<h4>Tags</h4>
+						<h5>Tags</h5>
 						{{render_tags(current_user.get_post_tags(row.posts.id))}}
-						<h3>{{row.posts.title}}</h3>
+
+						<a href="{{row.posts.link or '#'}}"><h3>{{row.posts.title}}</h3></a>
+						{% if row.posts.image_url %}
+							<img width="120px" class="pull-right" src="{{row.posts.image_url}}" />
+						{% endif %}
 						<p>{{row.posts.text}}</p>
 						
-						<p>Posted on {{row.posts.date}}</p>
-
-						{{user_box(row.user)}}
 						
-						{% if current_user.has_liked_post(row.posts.id) %}
-							<button type="button" class="btn btn-success">Liked</button>
-						{% else %}
-							<form action="/like-post" method="POST">
-								{{like.csrf_token}}
-								{{like.post_id(value=row.posts.id)}}
-								{{like.submit(class='btn btn-info')}}
-							</form>
-						{% endif %}
+						<p><small>Posted on {{row.posts.date}}</small></p>
+						<br/>
+						<div class="row">
+							<div class="col-md-12">
+								{{user_box(row.user)}}
+						
+								{% if current_user.has_liked_post(row.posts.id) %}
+									<button type="button" class="btn btn-success">
+										<img width="25px" src="{{url_for('static', filename='liked.png')}}"> Liked</button>
+								{% else %}
+									<form action="/like-post" method="POST">
+										{{like.csrf_token}}
+										{{like.post_id(value=row.posts.id)}}
+										{{like.submit(class='btn btn-info')}}
+									</form>
+								{% endif %}
+							</div>
+						
+						</div>
 					</div>
 				</div>
 				{% else %}
@@ -69,7 +80,23 @@
 			</div>
 		</div>
 	</div>
-		
+	
+	{% else %}	
+		<div class="row">
+			<div class="col-md-2 col-md-offset-5">
+				<img class="text-" src="{{url_for('static', filename='index.png')}}">
+				
+			</div>
+			<div class="col-md-4 col-md-offset-4">
+				<h1>Find like-minded people.</h1>
+			</div>
+		</div>
 	{% endif %}
+
+	
+
+
+	
+	
 
 {% endblock %}

@@ -1,5 +1,8 @@
+import os
+from time import time
+from werkzeug import secure_filename
 from flask import Flask, render_template, request, abort, flash
-from flask import url_for, redirect, jsonify
+from flask import url_for, redirect, jsonify, current_app
 from models import User, graph
 from flask_login import LoginManager, login_user, logout_user, login_required, current_user
 
@@ -8,6 +11,29 @@ from forms import RegistrationForm, LoginForm, PostForm, LikePostForm, FollowFor
 app = Flask(__name__)
 app.secret_key = 'Arfat'
 login_manager = LoginManager(app)
+
+
+with app.app_context():
+    current_app.config['ALLOWED_EXTENSIONS'] = ['jpg', 'jpeg','png']
+    current_app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER = os.path.join(os.path.abspath('app'), 'static')
+
+def allowed_file(filename):
+    return '.' in filename and \
+           filename.rsplit('.', 1)[1].lower() in current_app.config['ALLOWED_EXTENSIONS']
+
+def get_upload_file_url(image):
+    if image:
+        unique = str(int(time())) # added for uniqueness
+        if not allowed_file(image.filename):
+            return abort(406)
+
+        filename = ('%s_' % unique + secure_filename(image.filename)).lower()
+
+        image.save(os.path.join(current_app.config['UPLOAD_FOLDER'], filename.lower()))
+
+        return url_for('static', filename=filename, _external=True)
+
+    return None
 
 @login_manager.user_loader
 def user_loader(username):
@@ -27,15 +53,22 @@ def index():
 @login_required
 def post():
     post_form = PostForm(request.form)
+
     if post_form.validate_on_submit():
         title = post_form.title.data
         tags = post_form.tags.data
         text = post_form.text.data
         category = post_form.category.data
-        #tags = category + ',' + tags
+        link = post_form.link.data
+        image = request.files['image']
+
+        image_url = get_upload_file_url(image)
+        if image_url is None:
+            flash('File uplaod unsuccessful', 'danger')
+            return redirect(url_for('.post'))
 
 
-        if not current_user.add_post(title, tags, category, text):
+        if not current_user.add_post(title, link, tags, category, text, image_url):
             flash('Post was unsuccessful', 'danger')
             return redirect(url_for('.post'))
 
@@ -43,6 +76,16 @@ def post():
         return redirect(url_for('index'))
     return render_template('post.html', post_form=post_form)
 
+
+@app.route('/remove-tag')
+@login_required
+def remove_tag():
+    tagname = request.args.get('tag', None)
+    
+    if tagname:
+        current_user.remove_tag(tagname)
+
+    return redirect(url_for('.profile', email=current_user.email))
 
 
 @app.route('/like-post', methods=['POST'])
@@ -65,6 +108,7 @@ def get_tags():
     return jsonify(tags=record_list.evaluate())
 
 @app.route('/follow', methods=['POST'])
+@login_required
 def follow():
     form = FollowForm()
     if form.validate_on_submit():
@@ -79,6 +123,7 @@ def follow():
 
 
 @app.route('/unfollow', methods=['POST'])
+@login_required
 def unfollow():
     unfollow_form = UnfollowForm()
     if unfollow_form.validate_on_submit():
@@ -119,7 +164,8 @@ def register():
         is_registered = User.register_user(email, username, password)
 
         if not is_registered:
-            abort(400)
+            flash('The email is already registered.', 'danger')
+            return redirect(url_for('.register'))
 
         return redirect(url_for('.index'))
 
